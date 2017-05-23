@@ -402,7 +402,7 @@ timout	0, iphrase*idur, continue
 		reinit	start
 continue:
 
-		start_loop1:
+start_loop1:
 istart	=		icounter*idur+ibyardur								; adds offeset for byar chord and sets note start times
 igongcount	=		int(icounter%16)									; dividing phrase into gong cycle
 ijegon	=		1											; jegogan star on downbeat
@@ -792,6 +792,7 @@ e
 
 
 
+
 <bsbPanel>
  <label>Widgets</label>
  <objectName/>
@@ -806,7 +807,7 @@ e
   <g>162</g>
   <b>160</b>
  </bgcolor>
- <bsbObject type="BSBVSlider" version="2">
+ <bsbObject version="2" type="BSBVSlider">
   <objectName>amp</objectName>
   <x>266</x>
   <y>7</y>
@@ -824,7 +825,7 @@ e
   <resolution>-1.00000000</resolution>
   <randomizable group="0">false</randomizable>
  </bsbObject>
- <bsbObject type="BSBHSlider" version="2">
+ <bsbObject version="2" type="BSBHSlider">
   <objectName>freq</objectName>
   <x>10</x>
   <y>29</y>
@@ -842,7 +843,7 @@ e
   <resolution>-1.00000000</resolution>
   <randomizable group="0">false</randomizable>
  </bsbObject>
- <bsbObject type="BSBGraph" version="2">
+ <bsbObject version="2" type="BSBGraph">
   <objectName/>
   <x>8</x>
   <y>112</y>
@@ -862,7 +863,7 @@ e
   <modey>auto</modey>
   <all>true</all>
  </bsbObject>
- <bsbObject type="BSBConsole" version="2">
+ <bsbObject version="2" type="BSBConsole">
   <objectName/>
   <x>279</x>
   <y>112</y>
@@ -885,7 +886,7 @@ e
    <b>255</b>
   </bgcolor>
  </bsbObject>
- <bsbObject type="BSBLabel" version="2">
+ <bsbObject version="2" type="BSBLabel">
   <objectName/>
   <x>293</x>
   <y>44</y>
@@ -914,7 +915,7 @@ e
   <borderradius>1</borderradius>
   <borderwidth>1</borderwidth>
  </bsbObject>
- <bsbObject type="BSBDisplay" version="2">
+ <bsbObject version="2" type="BSBDisplay">
   <objectName>amp</objectName>
   <x>333</x>
   <y>44</y>
@@ -943,7 +944,7 @@ e
   <borderradius>1</borderradius>
   <borderwidth>1</borderwidth>
  </bsbObject>
- <bsbObject type="BSBLabel" version="2">
+ <bsbObject version="2" type="BSBLabel">
   <objectName/>
   <x>66</x>
   <y>57</y>
@@ -972,7 +973,7 @@ e
   <borderradius>1</borderradius>
   <borderwidth>1</borderwidth>
  </bsbObject>
- <bsbObject type="BSBDisplay" version="2">
+ <bsbObject version="2" type="BSBDisplay">
   <objectName>freq</objectName>
   <x>106</x>
   <y>57</y>
@@ -1001,7 +1002,7 @@ e
   <borderradius>1</borderradius>
   <borderwidth>1</borderwidth>
  </bsbObject>
- <bsbObject type="BSBLabel" version="2">
+ <bsbObject version="2" type="BSBLabel">
   <objectName/>
   <x>425</x>
   <y>6</y>
@@ -1030,7 +1031,7 @@ e
   <borderradius>1</borderradius>
   <borderwidth>1</borderwidth>
  </bsbObject>
- <bsbObject type="BSBDisplay" version="2">
+ <bsbObject version="2" type="BSBDisplay">
   <objectName>freqsweep</objectName>
   <x>449</x>
   <y>68</y>
@@ -1059,7 +1060,7 @@ e
   <borderradius>1</borderradius>
   <borderwidth>1</borderwidth>
  </bsbObject>
- <bsbObject type="BSBButton" version="2">
+ <bsbObject version="2" type="BSBButton">
   <objectName>Button 1</objectName>
   <x>435</x>
   <y>24</y>
@@ -1078,7 +1079,7 @@ e
   <latch>false</latch>
   <latched>false</latched>
  </bsbObject>
- <bsbObject type="BSBScope" version="2">
+ <bsbObject version="2" type="BSBScope">
   <objectName/>
   <x>8</x>
   <y>233</y>
@@ -1099,4 +1100,4 @@ e
 </bsbPanel>
 <bsbPresets>
 </bsbPresets>
-<EventPanel name="" tempo="60.00000000" loop="8.00000000" x="320" y="285" width="596" height="322" visible="true" loopStart="0" loopEnd="0">    </EventPanel>
+<EventPanel name="" tempo="60.00000000" loop="8.00000000" x="320" y="285" width="596" height="322" visible="false" loopStart="0" loopEnd="0">    </EventPanel>
